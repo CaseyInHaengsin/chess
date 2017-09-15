@@ -1,0 +1,148 @@
+<!--make a web page that explains how the game is played and a web page with the game grid on it.
+The game description page should have a link to the game grid page.
+The file name for the description page should be index.html -->
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Game Description</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" type="image/png" href="http://res.publicdomainfiles.com/pdf_view/59/13533925813796.png"/>
+</head>
+<body>
+
+<header>
+    <h1 id="headertitle">Game Description for Chess</h1>
+    <img id="headerimage" src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Chess_pawn.jpg">
+</header>
+
+<div class="topnav" id="myTopnav">
+    <a href="chess_table.html">Chess Game</a>
+    <a href="resources.html" target="_blank">Resources</a>
+</div>
+
+
+<main>
+    <h2>Setup</h2>
+    <p>Chess is played on a square board divided into eight rows of squares called ranks and eight columns called files,
+        with a dark square in each player's lower left corner. This is altogether 64 squares. The colors of the squares
+        are laid out in a checker (chequer) pattern in light and dark squares. To make speaking and writing about chess
+        easy, each square has a name. Each rank has a number from 1 to 8, and each file a letter from A to H. This means
+        that every square on the board has its own label, such as g1 or f5. The pieces are in white and black sets. The
+        players are called White and Black, and at the start of a game each player has 16 pieces. The 16 pieces are one
+        king, one queen, two rooks, two bishops, two knights and eight pawns.</p>
+    <h2>Movement</h2>
+    <p>Definitions: vertical lines are files; horizontal lines are ranks; lines at 45° are diagonals. Each piece has its
+        own way of moving around the board.</p>
+    <ul>
+        <li>The knight is the only piece that can jump over another piece.</li>
+        <li>No piece may move to a square occupied by a piece of the same color.</li>
+        <li>All pieces capture the same way they move, except pawns.</li>
+        <li>The king's move is one square in any direction. The king (K for short) may not move to any square where it
+            is threatened by an opposing piece. However, the king can move to a square that is occupied by an opponent's
+            piece and capture the piece, taking it off the board.
+        <li>
+        <li>The queen (Q) can move any distance in any direction on the ranks, files and diagonals.
+        <li>
+        <li>The rooks (R) move any distance on the ranks or files.
+        <li>
+        <li>The bishops (B) move diagonally on the board. Since a bishop can only move diagonally, it will always be on
+            the same color square.
+        <li>
+        <li>The knights (Kt or N) move in an "L" shape. Each move must be either two squares along a rank and one square
+            along a file, or two squares along a file and one square along a rank. It is the only piece that can jump
+            over other pieces. Like the other pieces, it captures an opposing piece by landing on its square.
+        <li>
+        <li>The pawns can only move up the board. On its first move a pawn may move either one or two squares forward. A
+            pawn captures one square diagonally, not as it moves: see white circles on its diagram. Besides, in some
+            situations pawns can capture opponent's pawns in a special way called en passant, which means in passing in
+            French (see below).
+        <li>
+    </ul>
+    <h2>Capturing</h2>
+    <p>Most pieces capture as they move. If a piece lands on an opponent's piece, the opposing piece is taken off the
+        board. There are three special cases:</p>
+    <ol>
+        <li>The king cannot be taken (see check and checkmate).</li>
+        <li>No piece can be taken while castling (see below).</li>
+        <li>Pawns take one square diagonally.</li>
+    </ol>
+    <h2>Check and Mate</h2>
+    <p>If a move is made which attacks the opposing king, that king is said to be 'in check'. The player whose king is
+        checked must make a move to remove the check. The options are: moving the king, capturing the threatening piece,
+        or moving another piece between the threatening piece and the king. If the player whose king is in danger cannot
+        do any of these things, it is checkmate, and the player loses the game.</p>
+    <h2>Special Moves</h2>
+    <ol>
+        <li><strong>Castling</strong></li>
+        <ul>
+            <li>Once in every game, each king can make a special move, known as castling. When the King castles, it
+                moves two squares to the left or right. When this happens, the Rook is moved to stand on the opposite
+                side of the King. Castling is only allowed all if all of these rules are kept
+            </li>
+            <ul>
+                <li>Neither piece doing the castling may have been moved during the game.</li>
+                <li>There must be no pieces between the king and the rook.</li>
+                <li>The king may not be currently in check, nor may the king pass through any square attacked by the
+                    opponent. As with any move, castling is not allowed if it would place the king in check.
+                </li>
+            </ul>
+        </ul>
+        <li><strong>En Passant</strong></li>
+        <ul>
+            <li>En Passant is a special capture. t is only available when a pawn moves forward two squares past an
+                opposing pawn on an adjacent file. The opposing pawn must be on the 5th rank from its own side. Then the
+                opponent's pawn can capture the double-mover as if it had only moved one square forward. This option is
+                open on the next move only.
+            <li>
+        </ul>
+        <li><strong>Promotion</strong></li>
+        <ul>
+            <li>hen a pawn moves to its eighth rank, it must be changed for a piece: a queen, rook, bishop, or knight of
+                the same color (player's choice).[17] Normally, the pawn is queened, but in some advantageous cases
+                another piece is chosen, called 'under-promotion'.
+            </li>
+        </ul>
+    </ol>
+    <h2>Ways a Game May End</h2>
+    <ol>
+        <li>Wins</li>
+        <ul>
+            <li>Checkmate. When a king is in check, and cannot get out of it.</li>
+            <li>Resignation. A player may resign at any time, usually because his/her position is hopeless. A losing
+                player is able to resign by placing their king on its side on the chessboard.
+            </li>
+            <li>Out of time. If player's clock time is over (exceeding the time control). Strictly speaking, this is not
+                part of the rules of the game, but part of the rules of tournament and match chess where chess clocks
+                are used.
+            </li>
+        </ul>
+        <li>Draws</li>
+        <ul>
+            <li>Draw agreed. A game may end in a draw at any time if one player offers a draw and the other accepts.
+            </li>
+            <li>Dead position. A position where no series of legal moves could lead to a mate (example: K+B vs K). The
+                game is drawn.
+            </li>
+            <li>Stalemate. If a player cannot make a move, and the player's king is not in check, this is also a draw.
+                This kind of draw is called a stalemate, and is rare.
+            </li>
+            <li>50-move rule. A game will also end in a draw if no piece is captured and no pawn has moved after fifty
+                moves. This is called the fifty-move rule, and happens late in the game.
+            </li>
+            <li>Threefold repetition. If the exactly same position is repeated three times during a game with the same
+                player to move each time, the player next to move may claim a draw. The game is now drawn. This is
+                called a draw by threefold repetition.
+            </li>
+        </ul>
+    </ol>
+    <h2>How to Video In case this read was not fun</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/fKxG8KjH1Qg" frameborder="0" allowfullscreen></iframe>
+</main>
+<footer>
+</footer>
+</body>
+
+
+</html>
