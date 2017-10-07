@@ -87,8 +87,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
             img.src = content;
 
-            td.innerHTML = content;
-            td.style.color =  "blue";
+            //td.innerHTML = content;
+            //td.style.color =  "blue";
 
             if ((r % 2 == 1 && c % 2 == 0) || (r % 2 == 0 && c % 2 == 1))
             {
